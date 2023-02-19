@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Khula:700);
+      @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
       body {
         background: #111;
       }
@@ -15,11 +15,11 @@
       }
       .console-container {
        
-        font-family:Khula;
-        font-size:4em;
+        font-family: 'Spline Sans Mono', monospace;
+        font-size:3.5em;
         text-align:center;
         height:200px;
-        width:600px;
+        width:1000px;
         display:block;
         position:absolute;
         color:white;
@@ -41,7 +41,7 @@
    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
    <script type="text/javascript">
       // function([string1, string2],target id,[color1,color2])    
-       consoleText(['Hello World.', 'Are you ready?', 'Let\'s rock\'n\'roll!'], 'text',['tomato','#3f9bb5','#00FF41']);
+       consoleText(['Wake up, Neo...','The Matrix has you.','Follow the white rabbit.', 'Knock, Knock, Neo.'], 'text',['#00FF41','#00FF41','#00FF41']);
 
       function consoleText(words, id, colors) {
         if (colors === undefined) colors = ['#fff'];

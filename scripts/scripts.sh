@@ -1,9 +1,16 @@
 #!/usr/bin/bash
 
-docker build -t html-hello-world:v2 .
+# Versioned
 
-docker run -d -p 80:80 html-hello-world:v2
+docker build -t html-hello-world:v2.1 .
 
-docker tag html-hello-world:v2 ramosmd/html-hello-world:v2
+docker run -d -p 80:80 html-hello-world:v2.1
 
-docker push ramosmd/html-hello-world:v2
+docker tag html-hello-world:v2.1 ramosmd/html-hello-world:v2.1
+
+docker push ramosmd/html-hello-world:v2.1
+
+# Latest
+
+docker tag html-hello-world:latest ramosmd/html-hello-world:latest
+docker push ramosmd/html-hello-world:latest

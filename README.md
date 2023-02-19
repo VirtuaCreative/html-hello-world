@@ -1,8 +1,10 @@
-# A Hello World HTML page
+# A sample HTML web application
 
-This is a simple HTML web page based on a Code [Pen](https://gist.github.com/VirtuaCreative/f487e573e7f110bd4fd7b2ba292dfc98).
+This repo is the codebase for an HTML web application published as a Docker image served on NGINX. 
 
-It's built as a Docker image on NGINX to serve as a a web app deployed on
-Kubernetes cluster behind Traefik Proxy as a reverse proxy.
+It was created as a sample app deployed to a Kubernetes cluster behind Traefik Proxy as a reverse proxy using the [Proxy Wizard](https://github.com/VirtuaCreative/traefik-wizard) as installation method.
 
-Docker Hub image is [`ramosmd/html-hello-world`](https://hub.docker.com/r/ramosmd/html-hello-world). 
+## References
+
+- Docker Hub image: [`ramosmd/html-hello-world`](https://hub.docker.com/r/ramosmd/html-hello-world). 
+- The web page was based on this [Code Pen](https://gist.github.com/VirtuaCreative/f487e573e7f110bd4fd7b2ba292dfc98).
